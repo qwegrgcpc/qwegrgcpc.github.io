@@ -8,8 +8,8 @@
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     html {
       box-sizing: border-box;
@@ -59,23 +59,23 @@
     }
 
     .panel1 {
-      background-image: url(./image/shinZong_min.png);
+      background-image: url(./image/shinZong.jpg);
     }
 
     .panel2 {
-      background-image: url(./image/vegan_min2.png);
+      background-image: url(./image/vegan.jpg);
     }
 
     .panel3 {
-      background-image: url(./image/dingding_min2.png);
+      background-image: url(./image/dingding.jpg);
     }
 
     .panel4 {
-      background-image: url(./image/ironMan_min.png);
+      background-image: url(./image/ironMan.jpg);
     }
 
     .panel5 {
-      background-image: url(./image/calendar_min.png);
+      background-image: url(./image/calendar.jpg);
     }
 
     /* Flex Children */
@@ -88,14 +88,15 @@
 
     .panel p {
       /* text-transform: uppercase; */
-      /* font-family: 'Pompiere', cursive; */
+      /* font-family: 'Pompiere', cursi ve; */
       font-family: 'Mogra', cursive;
+      font-family: 'Baloo Tammudu 2', cursive;
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
       font-size: 1em;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(0, 0, 0, 0.25);
+      background-color: rgba(0, 0, 0, 0.7);
     }
 
     .panel>*:first-child {
@@ -107,7 +108,7 @@
     }
 
     .open-active>*:first-child {
-      font-size: 0.6em;
+      font-size: 0.8em;
       transform: translateY(0);
     }
 
@@ -116,7 +117,7 @@
     }
 
     .panel p:nth-child(2) {
-      font-size: 3em;
+      font-size: 2em;
       z-index: 999;
     }
 
@@ -149,8 +150,9 @@
       color: #fff;
       text-decoration: none;
       border: solid 3px #fff;
-      line-height: 24px;
-      padding: 16px 24px;
+      line-height: 36px;
+      padding: 18px 24px 0px 24px;
+      vertical-align: middle;
     }
 
     .btn:hover {
