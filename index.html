@@ -8,7 +8,8 @@
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <style>
     html {
@@ -59,15 +60,15 @@
     }
 
     .panel1 {
-      background-image: url(./image/shinZong.jpeg);
-    }
-
-    .panel2 {
       background-image: url(./image/vegan.jpeg);
     }
 
-    .panel3 {
+    .panel2 {
       background-image: url(./image/dingding.jpeg);
+    }
+
+    .panel3 {
+      background-image: url(./image/travel.jpg);
     }
 
     .panel4 {
@@ -126,26 +127,6 @@
       flex: 4
     }
 
-    /* .panel.open::after{
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color:rgba(0, 0, 0, 0.45);
-
-    } */
-
-    /* .panel.open::before{
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background-color:#0000;
-    } */
     .btn {
       color: #fff;
       text-decoration: none;
@@ -160,10 +141,10 @@
       background-color: #fff;
       border-radius: 60px;
       transition: all 0.3s;
-      text-shadow:none;
+      text-shadow: none;
     }
 
-    .hoverTime{
+    .hoverTime {
       text-shadow: none;
       background-color: #fff;
       color: rgba(0%, 0%, 100%, 0.4)
@@ -175,31 +156,32 @@
 
   <div class="panels">
     <div class="panel panel1">
-      <p>skill：html、CSS、Javascript、jQuery</p>
-      <p>RWD</p>
-      <p><a href="https://youtu.be/HsCISO7vKtg" class="btn">see more</a></p>
-    </div>
-    <div class="panel panel2">
-      <p>skill：html、CSS、Javascript、jQuery、
+      <p>skill：html、CSS、JavaScript、jQuery、
         </br>Bootstrap4、php、MySQL</p>
       <p>Web</p>
-      <p><a href="https://youtu.be/_G4j0rj7zf8" class="btn">see more</a></p>
+      <p><a href="https://youtu.be/_G4j0rj7zf8" class="btn">demo(video)</a></p>
+    </div>
+    <div class="panel panel2">
+      <p>skill:html、CSS、JavaScript、Bootstrap4</br>、Vue、AJAX
+        、node.js、MySQL</p>
+      <p>System</p>
+      <p><a href="https://youtu.be/WcUOFxUjSc4" class="btn">demo(video)</a></p>
     </div>
     <div class="panel panel3">
-      <p>skill:html、CSS、Javascript、jQuery、Bootstrap4</br>、Vue、AJAX
-        、node.js、MySQL、Git</p>
-      <p>System</p>
-      <p><a href="https://youtu.be/WcUOFxUjSc4" class="btn">see more</a></p>
+      <p>skill:html、CSS、JavaScript、ES6、tailwind</br>、Vue、AJAX
+        、node.js</p>
+      <p>RWD</p>
+      <p><a href="https://qwegrgcpc.github.io/taiwan-tourism/#/" class="btn">demo (developing)</a></p>
     </div>
     <div class="panel panel4">
-      <p>skill:html、CSS、Javascript、jQuery、</br>Bootstrap4、Canvas</p>
+      <p>skill:html、CSS、JavaScript、jQuery、</br>Bootstrap4、Canvas</p>
       <p>Game</p>
-      <p><a href="https://youtu.be/eDU8rOFs4z4" class="btn">see more</a></p>
+      <p><a href="https://qwegrgcpc.github.io/ironman-game/" class="btn">demo</a></p>
     </div>
     <div class="panel panel5">
-      <p>skill:html、CSS、Javascript、Bootstrap4、Vue</p>
+      <p>skill:html、CSS、JavaScript、Bootstrap4、Vue</p>
       <p>Calendar</p>
-      <p><a href="https://youtu.be/9taWGjS_mf8" class="btn">see more</a></p>
+      <p><a href="https://qwegrgcpc.github.io/calender/" class="btn">demo</a></p>
     </div>
   </div>
 
@@ -221,28 +203,11 @@
         this.classList.toggle('open-active')
       }
     }
-    // function remove(e) {
-    //     this.classList.remove('hoverTime');
-    // }
-
-    // function btnHover(e) {
-    //   if (e.propertyName == 'border-bottom-left-radius') {
-    //     this.classList.add('hoverTime');
-    //   }
-    //   // if
-    //   console.log(e)
-    // }
 
     panels.forEach((panel) => {
       panel.addEventListener("click", clickHandler);
       panel.addEventListener("transitionend", transitionHandler);
     })
-
-    // btns.forEach((btn) => {
-    //   btn.addEventListener("mousein", btnHover);
-    //   btn.addEventListener("mouseout", remove);
-    // })
-
 
   </script>
 
